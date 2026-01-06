@@ -70,3 +70,4 @@ class Storage:
         # Mudança de escopo: se prioridade for "critica", deadline é obrigatório
         if priority is not None and priority.lower() == "critica" and not deadline:
             raise ValueError("Tarefas com prioridade 'critica' precisam de deadline (YYYY-MM-DD).")
+
